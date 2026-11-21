@@ -1,0 +1,5 @@
+ Container exp-k6-seguridad-piloto Creating 
+ Container exp-k6-seguridad-piloto Created 
+time="2026-11-21T00:15:22Z" level=warning msg="Request Failed" error="Put \"https://balanceador:8443/api/instituciones/inst-a/estudiantes/est-a-0022/intentos/175ceacd-3fe4-46b8-9bea-a2f87796fc31/respuestas/q4\": write tcp 172.20.0.15:42162->172.20.0.9:8443: write: broken pipe"
+time="2026-11-21T00:16:12Z" level=error msg="thresholds on metrics 'checks, http_req_failed{tipo:guardado}' have been crossed"
+

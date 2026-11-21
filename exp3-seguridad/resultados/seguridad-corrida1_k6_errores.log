@@ -1,0 +1,4 @@
+ Container exp-k6-seguridad-corrida1 Creating 
+ Container exp-k6-seguridad-corrida1 Created 
+time="2026-11-21T00:23:33Z" level=warning msg="Request Failed" error="Put \"https://balanceador:8443/api/instituciones/inst-b/estudiantes/est-b-0494/intentos/3a33c54a-8659-4730-8842-94057ea6b510/respuestas/q7\": write tcp 172.20.0.15:56868->172.20.0.9:8443: write: broken pipe"
+time="2026-11-21T00:27:02Z" level=warning msg="Request Failed" error="Put \"https://balanceador:8443/api/instituciones/inst-b/estudiantes/est-b-0194/intentos/e117e1ba-8832-4a58-83f4-140e58cc7df7/respuestas/q30\": write tcp 172.20.0.15:37318->172.20.0.9:8443: write: broken pipe"

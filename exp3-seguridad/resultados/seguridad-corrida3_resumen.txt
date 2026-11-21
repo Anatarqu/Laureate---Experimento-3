@@ -1,0 +1,31 @@
+
+=== Experimento 3 · SEG-01 · resistencia a ataques ===
+  ataques lanzados           : 120  (tipos: credencial_robada, token_alterado, token_vencido, sin_token, endpoint_docente, llamada_directa)
+  ataques rechazados         : 120  (pytest: 120 de 120 casos correctos)
+  tiempo de rechazo          : p95 5.9 ms, máximo 13.8 ms
+  enumeración                : 20 de 20 pares con respuesta idéntica
+  controles                  : 2 de 2 correctos
+  ataques en los Logs        : 120 de 120
+  rechazos registrados (todos, incl. enumeración): 160 de 160
+  duplicados por request_id  : 0
+  registros con campos vacíos: 0
+  demora del registro        : máximo 0.06 s
+    politica_abac                    40
+    intento_ajeno                    20
+    ruta_no_coincide_con_token       20
+    token_vencido                    20
+    intento_inexistente              20
+    firma_invalida                   20
+    sin_token                        20
+
+=== Resumen de la corrida (para la tabla de resultados) ===
+  SEG-01   Ataques rechazados                      100.0 % (120/120)   meta 100 %            CUMPLE
+  SEG-01   Tiempo de rechazo (máximo)                          14 ms   meta < 500 ms         CUMPLE
+  SEG-01   No revela si el recurso existe                20/20 pares   meta 100 % idénticos  CUMPLE
+  SEG-01   Ataques registrados                         100.0 % (120)   meta 100 %            CUMPLE
+  SEG-01   Registrados una sola vez                     0 duplicados   meta 0                CUMPLE
+  SEG-01   Registros con todos sus campos              0 incompletos   meta 0                CUMPLE
+  SEG-01   Demora del registro (máximo)                       0.06 s   meta <= 5 s           CUMPLE
+  SEG-01   Controles legítimos                                   2/2   meta 2/2              CUMPLE
+
+  8 de 8 métricas cumplen -> la corrida RESPALDA la hipótesis
